@@ -147,6 +147,38 @@ class _LoginPageState extends State<LoginPage> {
                     ),
                   ),
                 ),
+                const SizedBox(height: 20),
+                Container(
+                  padding: const EdgeInsets.all(10),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(10),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.withOpacity(0.5),
+                        spreadRadius: 1,
+                        blurRadius: 5,
+                        offset: const Offset(0, 3),
+                      ),
+                    ],
+                  ),
+                  child: const Column(
+                    children: [
+                      Text(
+                          'Nama: Satrio Mukti Prayoga',
+                          style: TextStyle(fontSize: 18, color: Colors.black54)
+                      ),
+                      Text(
+                          'NIM: 211351137',
+                          style: TextStyle(fontSize: 18, color: Colors.black54)
+                      ),
+                      Text(
+                          'Kelas: Malam B',
+                          style: TextStyle(fontSize: 18, color: Colors.black54)
+                      ),
+                    ],
+                  ),
+                ),
               ],
             ),
           ),
