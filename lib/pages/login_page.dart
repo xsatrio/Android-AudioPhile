@@ -165,15 +165,15 @@ class _LoginPageState extends State<LoginPage> {
                   child: const Column(
                     children: [
                       Text(
-                          'Nama: Satrio Mukti Prayoga',
+                          'Nama : Satrio Mukti Prayoga',
                           style: TextStyle(fontSize: 18, color: Colors.black54)
                       ),
                       Text(
-                          'NIM: 211351137',
+                          'NIM : 211351137',
                           style: TextStyle(fontSize: 18, color: Colors.black54)
                       ),
                       Text(
-                          'Kelas: Malam B',
+                          'Kelas : Malam B',
                           style: TextStyle(fontSize: 18, color: Colors.black54)
                       ),
                     ],
