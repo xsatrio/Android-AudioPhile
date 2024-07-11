@@ -50,10 +50,23 @@ class DetailProdukPage extends StatelessWidget {
                     ),
                   );
                 } else {
-                  return SizedBox(
+                  return Container(
                     width: 300,
                     height: 300,
-                    child: Image.network(artikel.urlToImage, fit: BoxFit.cover),
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10),
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.black.withOpacity(0.1),
+                          blurRadius: 10,
+                          offset: const Offset(0, 5),
+                        ),
+                      ],
+                      image: DecorationImage(
+                        image: NetworkImage(artikel.urlToImage),
+                        fit: BoxFit.cover,
+                      ),
+                    ),
                   );
                 }
               },
